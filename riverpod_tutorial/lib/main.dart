@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 import 'consumer.dart';
+import 'todo/provider.dart';
 
 part 'main.g.dart';
 
@@ -36,7 +37,7 @@ class MyApp extends ConsumerWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('Example')),
         body: Center(
-          child: Home(),
+          child: TodoPage(),
         ),
       ),
     );

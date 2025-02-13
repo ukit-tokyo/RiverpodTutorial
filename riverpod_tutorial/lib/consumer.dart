@@ -11,8 +11,6 @@ class Home extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final AsyncValue<bool> result = ref.watch(resultProvider);
 
-    print(result.asError);
-
     return Center(
       /// ネットワークリクエストは非同期であり、失敗する可能性があるため、
       /// エラー状態とローディング状態の両方を処理する必要があります。
